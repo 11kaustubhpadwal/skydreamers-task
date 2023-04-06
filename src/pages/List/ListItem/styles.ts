@@ -5,6 +5,7 @@ export const cardWrapper = {
   marginBottom: "1rem",
   boxShadow: "0.125rem 0.125rem 0.125rem 0.125rem rgba(0,0,0,0.05)",
   height: "100%",
+  transition: ".3s",
   ":hover": {
     background: "#36454F",
     color: "white",
