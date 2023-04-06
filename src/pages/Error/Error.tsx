@@ -12,7 +12,10 @@ const Error = () => {
       <Typography fontSize={18} fontWeight={500} mb={2}>
         Page not found {`:(`}
       </Typography>
-      <StyledButton onClick={() => navigate(Routes.Home)}>
+      <StyledButton
+        onClick={() => navigate(Routes.Home)}
+        style={{ width: "15%" }}
+      >
         Back to Home
       </StyledButton>
     </Box>

@@ -27,6 +27,7 @@ const List = () => {
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortBy]);
 
   const loading = isLoading || isFetching || isRefetching;

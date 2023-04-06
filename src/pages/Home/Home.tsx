@@ -12,6 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     navigate(Routes.List);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
