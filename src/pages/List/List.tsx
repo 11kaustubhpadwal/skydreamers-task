@@ -34,7 +34,7 @@ const List = () => {
   return (
     <>
       <Grid container mb={3}>
-        <Grid item xs={12} md>
+        <Grid item xs={12} sm>
           <StyledInput
             placeholder="e.g. react"
             value={searchValue}
@@ -42,7 +42,7 @@ const List = () => {
             disabled={loading}
           />
         </Grid>
-        <Grid item xs={12} md="auto">
+        <Grid item xs={12} sm="auto">
           <StyledButton onClick={handleSearch} disabled={loading}>
             Search
           </StyledButton>
@@ -65,7 +65,7 @@ const List = () => {
             Title
           </Typography>
         </Grid>
-        <Grid item sm>
+        <Grid item xs>
           <Typography
             fontSize={18}
             fontWeight={500}
@@ -92,7 +92,12 @@ const List = () => {
       </Grid>
       {loading && <Loader />}
       {!loading && (
-        <Grid container rowSpacing={"1rem"} columnSpacing={"2rem"}>
+        <Grid
+          container
+          rowSpacing={"2rem"}
+          columnSpacing={"2rem"}
+          alignItems={"stretch"}
+        >
           {data?.map((listItem) => (
             <Grid item md={12} lg={6}>
               <ListItem
