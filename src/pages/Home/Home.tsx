@@ -1,11 +1,18 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 
-import React from "react";
+import { Routes } from "../routes";
 import { navLinks } from "./constants";
 
 const Home = () => {
   const location = useLocation();
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate(Routes.List);
+  }, []);
 
   return (
     <>
